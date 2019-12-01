@@ -1,5 +1,5 @@
 #main-div{
-    background-color: red;
+    background-image: linear-gradient(30deg,violet,indigo,blue,lightgreen,yellow,orange,red);
     width:30%;
     border-radius: 25px;
     margin-top:10%;
@@ -14,6 +14,7 @@
     border-radius: 10px;
 }
 .number-button{
+    background-image: linear-gradient(30deg,green,white,blue);
     margin:10px;
     padding:10px;
     text-align: center;
@@ -21,6 +22,7 @@
     outline: none;
 }
 .operator-button{
+    background-image: linear-gradient(30deg,green,white,blue);
     margin:10px;
     padding:10px;
     text-align: center;
@@ -31,6 +33,7 @@
     text-align:right;
 }
 #clear{
+    background-image: linear-gradient(30deg,green,white,blue);
     margin-top:2% ; 
     margin-bottom:2% ; 
     width:40% ; 
