@@ -3,6 +3,7 @@ var x=0
 
 function operand(operand){
     document.getElementById('result').value=document.getElementById('result').value+operand
+    console.log(document.getElementById('result').value)
 }
 
 function operator(operator){
@@ -34,4 +35,16 @@ function calculate(){
     document.getElementById('main-result').value=operand2/operand1
 
     document.getElementById('result').value=""
+}
+
+function one_clear(){
+    var value=document.getElementById('result').value
+    value=value.substring(0, value.length - 1)
+    document.getElementById('result').value=value
+}
+
+function all_clear(){
+    x=0
+    document.getElementById('result').value=""
+    document.getElementById('main-result').value=""
 }
