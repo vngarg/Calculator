@@ -1,5 +1,6 @@
 <html>
 <head>
+    <title>CALCULATOR</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -16,34 +17,34 @@
 <body> 
     <div id="main-div" class="container">
         <input type="number" class="main-result result" id="main-result">
-        <input type="button" value="All Clear" class="rounded-pill btn btn-primary" id="clear" onclick=all_clear()>
+        <input type="button" value="All Clear" class="rounded-pill btn" id="clear" onclick=all_clear()>
         <input type="text" class="result" id="result">
         <div class="row">
-            <input type="button" class="number-button offset-lg-1 offset-md-2 offset-sm-2 offset-xs-2 mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="1" onclick=operand(1)>
-            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="2" onclick=operand(2)>
-            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="3" onclick=operand(3)>
-            <input type="button" class="operator-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="+" onclick=operator(43)>
+            <input type="button" class="ml-4 number-button offset-lg-1 offset-md-2 offset-sm-2 offset-xs-2 mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="1" onclick=operand(1)>
+            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="2" onclick=operand(2)>
+            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="3" onclick=operand(3)>
+            <input type="button" class="operator-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="+" onclick=operator(43)>
         </div>
         <br>
         <div class="row">
-            <input type="button" class="number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="4" onclick=operand(4)>
-            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="5" onclick=operand(5)>
-            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="6" onclick=operand(6)>
-            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="-" onclick=operator(45)>
+            <input type="button" class="ml-4 number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="4" onclick=operand(4)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="5" onclick=operand(5)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="6" onclick=operand(6)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="-" onclick=operator(45)>
         </div>
         <br>
         <div class="row">
-            <input type="button" class="number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="7" onclick=operand(7)>
-            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="8" onclick=operand(8)>
-            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="9" onclick=operand(9)>
-            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="*" onclick=operator(42)>
+            <input type="button" class="ml-4 number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="7" onclick=operand(7)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="8" onclick=operand(8)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="9" onclick=operand(9)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="*" onclick=operator(42)>
         </div>
         <br>
         <div class="row">
-            <input type="button" class="operator-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="CLR" onclick=one_clear()>
-            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="0" onclick=operand(0)>
-            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="=" onclick=calculate()>
-            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-success" value="/" onclick=operator(47)>
+            <input type="button" class="ml-4 operator-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="CLR" onclick=one_clear()>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="0" onclick=operand(0)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="=" onclick=calculate()>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn" value="/" onclick=operator(47)>
         </div>
     </div>
     <script src="javascript.js" type="text/javascript"></script>
