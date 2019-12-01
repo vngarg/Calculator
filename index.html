@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <input type="number" id="main-result"> 
+    <div id="main-div" class="container">
+        <input type="text" id="result">
+        <div class="row">
+            <input type="button" class="number-button offset-lg-1 offset-md-2 offset-sm-2 offset-xs-2 mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="1" onclick=operand(1)>
+            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="2" onclick=operand(2)>
+            <input type="button" class="number-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="3" onclick=operand(3)>
+            <input type="button" class="operator-button mt-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="+" onclick=operator(43)>
+        </div>
+        <br>
+        <div class="row">
+            <input type="button" class="number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="4" onclick=operand(4)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="5" onclick=operand(5)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="6" onclick=operand(6)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="-" onclick=operator(45)>
+        </div>
+        <br>
+        <div class="row">
+            <input type="button" class="number-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="7" onclick=operand(7)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="8" onclick=operand(8)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="9" onclick=operand(9)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="*" onclick=operator(42)>
+        </div>
+        <br>
+        <div class="row">
+            <input type="button" class="operator-button offset-lg-2 offset-md-2 offset-sm-2 offset-xs-2 mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="." onclick=operand(46)>
+            <input type="button" class="number-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="0" onclick=operand(0)>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-primary" value="=" onclick=calculate()>
+            <input type="button" class="operator-button mt-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 rounded-circle btn btn-success" value="/" onclick=operator(47)>
+        </div>
+    </div>
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>
